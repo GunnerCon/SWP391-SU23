@@ -1,0 +1,540 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CarNews</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+        <link href="css/master.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+                                <script src="js/html5shiv-3.7.0.js"></script>
+                                <script src="js/respond-1.4.2.js"></script>
+                        <![endif]-->
+    </head>
+    <body class="noIE inner-page ">
+
+        <!-- Loader -->
+        <div id="ip-container" class="ip-container"> 
+            <!-- initial header -->
+            <header class="ip-header">
+                <div class="ip-loader"> 	<svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+                    <path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,39.3,10z"/>
+                    <path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+                    </svg>
+                </div>
+            </header>
+            <!-- Loader end --> 
+
+        </div>
+
+        <!-- HEADER -->
+        <header id="main-header">
+            <!--  <div id="cd-nav"> <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+                <nav id="cd-main-nav">
+                  <ul>
+                    <li ><a href="index.html"><span>Trang Chủ</span> <small> ĐÁNH GIÁ XE MỚI NHẤT</small> </a></li>
+                    <li><a href="blog.html"><span>Tin Tức Xe</span> <small>NEWS ABOUT UPCOMING</small></a></li>
+                    <li class="active" ><a href="post.html"><span>Hãng Xe </span> <small>Thông tin các hãng xe</small></a></li>
+                    <li><a data-toggle="dropdown" class="dropdown-toggle" href="#"><span>Mua Xe<b class="caret"></b></span> <small>Tất cả các mẫu mã</small></a>
+                      <ul>
+                        <li><a href="catalog.html">Catalog</a></li>
+                                <li><a href="product.html"  >Product</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="shop.html"><span>CAR Pages </span> <small>SHARE YOUR OPINION</small></a></li>
+                  </ul>
+                </nav>
+              </div>-->
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-3 spacer"> </div>
+                    <!--                    <div class="col-md-6"> 
+                                             NAVIGATION 
+                                            <div class="navbar navbar-default navbar-top ">
+                                                <div class="navbar-collapse">
+                                                    <ul class="nav navbar-nav nav-justified">
+                                                                                            <li ><a href="#"><span>Trang Chủ</span></a></li>
+                                                                                            <li><a href="#"><span></span></a></li>
+                                                                                            <li class="current"><a href="#"><span>Liên hệ</span></a></li>
+                    
+                                                       
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>-->
+                    <div class="col-md-4"> 
+                        <!-- LOGO -->
+                        <div id="logo" > <span class="bglogo1 transform-please-2"><a href="index.html"><img src="img/logo.png"  alt="logo"/></a></span> <span class="bglogo2 transform-please-2"></span> <span class="bglogo3 transform-please-2"></span> <span class="bglogo4 transform-please-2"></span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <nav id="main-nav" >
+                    <div class="row">
+                        <div class="col-md-12"> 
+                            <!-- NAVIGATION -->
+                            <div class="navbar navbar-default" role="navigation">
+                                <div class="navbar-header"> </div>
+                                <div class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav nav-justified">
+                                        <li ><a href="index.html"><span>Trang Chủ</span> <small> ĐÁNH GIÁ XE MỚI NHẤT</small> </a></li>
+                                        <li><a href="blog.html"><span>Tin Tức Xe</span> <small>NEWS ABOUT UPCOMING</small></a></li>
+
+                                        <li><a data-toggle="dropdown" class="dropdown-toggle" href="#"><span>Mua Xe<b class="caret"></b></span> <small>Tất cả các mẫu mã</small></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Toyota</a></li>
+                                                <li><a href="#"  >Honda</a></li>
+                                                <li><a href="#"  >Lexus</a></li>
+                                                <li><a href="#"  >BMW</a></li>
+                                                <li><a href="#"  >Poscher</a></li>
+                                                <li><a href="#"  >VinFast</a></li>
+                                            </ul>
+                                        </li>
+                                        <li ><a href="#"><span>Bán xe</span> <small>Xe cần bán</small></a></li>
+                                        <li  ><a href="post.html"><span>Giới thiệu</span><small>Về Showroom Carnews</small></a></li>
+                                          <li><a data-toggle="dropdown" class="dropdown-toggle" href="#"><span>Tài Khoản<b class="caret"></b></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="Login.jsp"><span>Đăng nhập</span></a></li>
+                                                <li><a href="Register.jsp"><span>Đăng kí</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mini-search-top">
+                                    <form class="form-mini-search" >
+                                        <input type="text" placeholder="Search..">
+                                        <button  type="submit" class="arrow-link submit-link"> <span class="icon-transform transform-please"><i class="fa fa-search"></i></span></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+        <!-- HEADER END -->
+
+        <main id="main" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="page-title col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h3>Danh sách các Showroom</h3>
+                        <div class="line transform-please-2"></div>
+                    </div>
+
+                    <!-- MAIN CONTENT -->
+                    <div class="col-xs-12 col-sm-12 col-md-9">
+                        <section class="main-content" role="main">
+
+
+                            <div class="col-6" style="display: inline-block">
+                                <div class="item hot">
+                                    <div class="head">
+                                        <div class="photo">
+                                            <a href="https://auto568.oto.com.vn/"><img class="photo" src="https://img1.oto.com.vn/crop/165x165/2020/05/14/mER5FXHc/f66fb900daec20b279fd-8237.jpg" alt="Auto 568" title="Auto 568" /></a>
+                                        </div>
+                                        <div class="info">
+                                            <h3 class="title"><a href="https://auto568.oto.com.vn/" title="Auto 568">Auto 568 </a></h3>
+                                            <div class="info-box">
+                                                <div class="rating">
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star-half-alt"></span>
+                                                </div>
+                                                <p class="txt">(11 đánh giá)</p>
+                                            </div>
+                                            <div class="stt-box">
+                                                <p class="status">Xe mới – Xe đ&#227; qua sử dụng</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="box-bottom">
+                                        <p class="location"><i class="icon-location"></i>517 Kim Mã, Phường Ngọc Khánh, Quận Ba Đình, Thành Phố Hà Nội</p>
+                                        <div class="btn-group">
+                                            <span class="btn btn-tel" data-phone="0941686789" onclick="dbShowRoom.showPhone(this)"><i class="icon-phone"></i><span>0941 6** ***</span></span>
+                                            <span class="btn btn-car">18 xe đang bán</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="item hot">
+                                    <div class="head">
+                                        <div class="photo">
+                                            <a href="/salons/auto-chot-3943"><img class="photo" src="https://img1.oto.com.vn/crop/165x165/2022/11/17/uEWcodyc/photo-2022-11-17-15-36-06-5d4f.jpg" alt="AUTO CHỐT" title="AUTO CHỐT" /></a>
+                                        </div>
+                                        <div class="info">
+                                            <h3 class="title"><a href="/salons/auto-chot-3943" title="AUTO CHỐT">AUTO CHỐT <i class="icon-ok-circled cl-135EAC"></i></a></h3>
+                                            <div class="info-box">
+                                                <div class="rating">
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                    <span class="icon-star"></span>
+                                                </div>
+                                                <p class="txt">(1 đánh giá)</p>
+                                            </div>
+                                            <div class="stt-box">
+                                                <p class="status">Xe đ&#227; qua sử dụng</p>
+                                                <p class="tag"><span class="icon-otocheck-bl"></span>OTOcheck</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="box-bottom">
+                                        <p class="location"><i class="icon-location"></i>Lô E số 2 Đường Hạ Yên Quyết (đối diện trường Mầm Non Yên Hoà), Phường Yên Hoà, Q Cầu Giấy, Tp Hà Nội. </p>
+                                        <div class="btn-group">
+                                            <span class="btn btn-tel" data-phone="0856616666" onclick="dbShowRoom.showPhone(this)"><i class="icon-phone"></i><span>0856 6** ***</span></span>
+                                            <span class="btn btn-car">1291 xe đang bán</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="item hot">
+                                        <div class="head">
+                                            <div class="photo">
+                                                <a href="/salons/xe-tai-tot-reway-3951"><img class="photo" src="https://img1.oto.com.vn/crop/165x165/2023/02/01/uEWcodyc/1-5224.jpg" alt="Xe Tải Tốt Reway" title="Xe Tải Tốt Reway" /></a>
+                                            </div>
+                                            <div class="info">
+                                                <h3 class="title"><a href="/salons/xe-tai-tot-reway-3951" title="Xe Tải Tốt Reway">Xe Tải Tốt Reway <i class="icon-ok-circled cl-135EAC"></i></a></h3>
+                                                <div class="info-box">
+                                                    <div class="rating">
+                                                        <span class="icon-star-empty"></span>
+                                                        <span class="icon-star-empty"></span>
+                                                        <span class="icon-star-empty"></span>
+                                                        <span class="icon-star-empty"></span>
+                                                        <span class="icon-star-empty"></span>
+                                                    </div>
+                                                    <p class="txt">(chưa c&#243; đánh giá)</p>
+                                                </div>
+                                                <div class="stt-box">
+                                                    <p class="status">Xe đ&#227; qua sử dụng</p>
+                                                    <p class="tag"><span class="icon-otocheck-bl"></span>OTOcheck</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="box-bottom">
+                                            <p class="location"><i class="icon-location"></i>227 Phạm Văn Đồng, Bắc Từ Liêm, Hà Nội</p>
+                                            <div class="btn-group">
+                                                <span class="btn btn-tel" data-phone="0966971869" onclick="dbShowRoom.showPhone(this)"><i class="icon-phone"></i><span>0966 9** ***</span></span>
+                                                <span class="btn btn-car">11 xe đang bán</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+
+                        </section>
+                    </div>
+                    <!-- // MAIN CONTENT -->
+                    <div class="space40 visible-xs"></div>
+                    <!-- SIDEBAR -->
+                    <div class="col-xs-12 col-sm-12 col-md-3">
+                        <aside class="sidebar">
+
+                            <!--Hàm tìm kiếm Showroom-->
+                            <div class="widget widget-search ">
+                                <h3 class="widget-title"><span>Tìm Kiếm</span></h3>
+                                <form action="/" class="searchform" id="searchform" method="get" role="Nhập từ khóa để tìm kiếm">
+                                    <input type="text" id="s" name="s" value=""  placeholder="Nhập từ khóa để tìm kiếm">
+                                    <button > <i class="fa fa-search"></i> </button>
+                                </form>
+                            </div>
+
+
+                            <!-- CATEGORY LIST WIDGET -->
+                            <!--          <div class="widget widget-category">
+                                        <h3 class="widget-title"><span>categories</span></h3>
+                                        <ul class="category-list unstyled clearfix">
+                                          <li><a href="#">Technology</a><span class="posts-count">25</span></li>
+                                          <li><a href="#">News</a><span class="posts-count">11</span></li>
+                                          <li><a href="#">Photography</a><span class="posts-count">47</span></li>
+                                          <li><a href="#">Design</a><span class="posts-count">10</span></li>
+                                          <li><a href="#">Web Design</a><span class="posts-count">15</span></li>
+                                        </ul>
+                                      </div>-->
+                            <!-- // CATEGORY LIST WIDGET --> 
+
+                            <!-- TABBED CONTENT WIDGET -->
+                            <div class="widget widget-tabbed">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#tab-popular" data-toggle="tab">Salon bán chạy nhất</a></li>
+                                    
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="tab-popular">
+                                        <ul class="entry-list unstyled">
+                                            <li>
+                                                <div class="entry-thumbnail"> <a href="#" class="img"> <img src="https://img1.oto.com.vn/crop/165x165/2020/05/14/mER5FXHc/f66fb900daec20b279fd-8237.jpg" width="100" height="100" alt=""/></a> </div>
+                                                <div class="entry-main">
+                                                    <div class="entry-meta">
+                                                        <time class="entry-datetime" datetime="2013-10-27" title="2013-10-27"> <a href="#"><span aria-hidden="true" class="icon-clock"></span> 17 March , 2013</a> </time>
+                                                    </div>
+                                                    <div class="entry-header">
+                                                        <h6 class="entry-title" ><a href="#" style="">517 Kim Mã, Phường Ngọc Khánh, Ba Đình, Hà Nội</a></h6>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <div class="entry-thumbnail"> <a href="#" class="img"> <img src="https://img1.oto.com.vn/crop/165x165/2022/11/17/uEWcodyc/photo-2022-11-17-15-36-06-5d4f.jpg" width="70" height="70" alt=""/></a> </div>
+                                                <div class="entry-main">
+                                                    <div class="entry-meta">
+                                                        <time class="entry-datetime" datetime="2013-10-27" title="2013-10-27"> <a href="#"><span aria-hidden="true" class="icon-clock"></span> 16 March , 2013</a> </time>
+                                                    </div>
+                                                    <div class="entry-header">
+                                                        <h5 class="entry-title"><a href="#">Lô E số 2 Đường Hạ Yên Quyết Tp Hà Nội</a></h5>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <div class="entry-thumbnail"> <a href="#" class="img"> <img src="media/small/3.jpg" width="70" height="70" alt=""/> </a> </div>
+                                                <div class="entry-main">
+                                                    <div class="entry-meta">
+                                                        <time class="entry-datetime" datetime="2013-10-27" title="2013-10-27"> <a href="#"><span aria-hidden="true" class="icon-clock"></span> 15 March , 2014</a> </time>
+                                                    </div>
+                                                    <div class="entry-header">
+                                                        <h5 class="entry-title"><a href="#">Standard Post with Blog [...]</a></h5>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <div class="entry-thumbnail"> <a href="#" class="img"> <img src="media/small/4.jpg" width="70" height="70" alt=""/></a> </div>
+                                                <div class="entry-main">
+                                                    <div class="entry-meta">
+                                                        <time class="entry-datetime" datetime="2013-10-27" title="2013-10-27"> <a href="#"><span aria-hidden="true" class="icon-clock"></span> 14 March , 2013</a> </time>
+                                                    </div>
+                                                    <div class="entry-header">
+                                                        <h5 class="entry-title"><a href="#">Standard Post with Blog [...]</a></h5>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane" id="tab-recent">
+                                        <ul class="entry-list unstyled">
+                                            <li>
+                                                <div class="entry-thumbnail"> <a href="#" class="img"> <img src="media/small/1.jpg" width="70" height="70" alt=""/> </a> </div>
+                                                <div class="entry-main">
+                                                    <div class="entry-header">
+                                                        <h5 class="entry-title"><a href="#">Standard Post with Blog [...]</a></h5>
+                                                    </div>
+                                                    <div class="entry-meta">
+                                                        <time class="entry-datetime" datetime="2013-10-27" title="2013-10-27"> <a href="#"><span aria-hidden="true" class="icon-clock"></span> 12 March , 2013</a> </time>
+                                                        <div class="entry-comments"> <a href="#"> <span aria-hidden="true" class="icon-bubbles"></span> 47 </a> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <div class="entry-thumbnail"> <a href="#" class="img"> <img src="media/small/2.jpg" width="70" height="70" alt=""/> </a> </div>
+                                                <div class="entry-main">
+                                                    <div class="entry-header">
+                                                        <h5 class="entry-title"><a href="#">Standard Post with Blog [...]</a></h5>
+                                                    </div>
+                                                    <div class="entry-meta">
+                                                        <time class="entry-datetime" datetime="2013-10-27" title="2013-10-27"> <a href="#"><span aria-hidden="true" class="icon-clock"></span> 11 March , 2013</a> </time>
+                                                        <div class="entry-comments"> <a href="#"> <span aria-hidden="true" class="icon-bubbles"></span> 47 </a> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <div class="entry-thumbnail"> <a href="#" class="img"> <img src="media/small/3.jpg" width="70" height="70" alt=""/> </a> </div>
+                                                <div class="entry-main">
+                                                    <div class="entry-header">
+                                                        <h5 class="entry-title"><a href="#">Standard Post with Blog [...]</a></h5>
+                                                    </div>
+                                                    <div class="entry-meta">
+                                                        <time class="entry-datetime" datetime="2013-10-27" title="2013-10-27"> <a href="#"><span aria-hidden="true" class="icon-clock"></span> 10 March , 2013</a> </time>
+                                                        <div class="entry-comments"> <a href="#"> <span aria-hidden="true" class="icon-bubbles"></span> 47 </a> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <div class="entry-thumbnail"> <a href="#" class="img"> <img src="media/small/4.jpg" width="70" height="70" alt=""/> </a> </div>
+                                                <div class="entry-main">
+                                                    <div class="entry-header">
+                                                        <h5 class="entry-title"><a href="#">Standard Post with Blog [...]</a></h5>
+                                                    </div>
+                                                    <div class="entry-meta">
+                                                        <time class="entry-datetime" datetime="2013-10-27" title="2013-10-27"> <a href="#"><span aria-hidden="true" class="icon-clock"></span> 7 March , 2013</a> </time>
+                                                        <div class="entry-comments"> <a href="#"> <span aria-hidden="true" class="icon-bubbles"></span> 47 </a> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane" id="tab-comments">
+                                        <ul class="entry-list unstyled">
+                                            <li>
+                                                <div class="entry-thumbnail"> <a href="#" class="img"><img src="media/small/1.jpg" width="70" height="70" alt=""/> </a> </div>
+                                                <div class="entry-main">
+                                                    <div class="entry-header">
+                                                        <h5 class="entry-title"><a href="#">John Doe </a>Says:</h5>
+                                                    </div>
+                                                    <div class="entry-content">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida nibh sed faucibus mattis <a href="#" class="readmore">[...]</a></p>
+                                                    </div>
+                                                    <div class="entry-meta">
+                                                        <time class="entry-datetime" datetime="2013-10-27" title="2013-10-27"> <a href="#"><span aria-hidden="true" class="icon-clock"></span> 17 March , 2013</a> </time>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <div class="entry-thumbnail"> <a href="#" class="img"> <img src="media/small/2.jpg" width="70" height="70" alt=""/> </a> </div>
+                                                <div class="entry-main">
+                                                    <div class="entry-header">
+                                                        <h5 class="entry-title"><a href="#">John Doe </a>Says:</h5>
+                                                    </div>
+                                                    <div class="entry-content">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida nibh sed faucibus mattis <a href="#" class="readmore">[...]</a></p>
+                                                    </div>
+                                                    <div class="entry-meta">
+                                                        <time class="entry-datetime" datetime="2013-10-27" title="2013-10-27"> <a href="#"><span aria-hidden="true" class="icon-clock"></span> 17 March , 2013</a> </time>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                            <li>
+                                                <div class="entry-thumbnail"> <a href="#" class="img"><img src="media/small/3.jpg" width="70" height="70" alt=""/> </a> </div>
+                                                <div class="entry-main">
+                                                    <div class="entry-header">
+                                                        <h5 class="entry-title"><a href="#">John Doe </a>Says:</h5>
+                                                    </div>
+                                                    <div class="entry-content">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida nibh sed faucibus mattis <a href="#" class="readmore">[...]</a></p>
+                                                    </div>
+                                                    <div class="entry-meta">
+                                                        <time class="entry-datetime" datetime="2013-10-27" title="2013-10-27"> <a href="#"><span aria-hidden="true" class="icon-clock"></span> 17 March , 2013</a> </time>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // TABBED CONTENT WIDGET --> 
+
+                            <!-- FLICKR STREAM -->
+                            <div class="widget widget-flickr">
+                                <h3 class="widget-title"><span>FLICKR photos</span></h3>
+                                <ul id="flickr-feed" class="cells-9 img unstyled clearfix" data-items="9">
+                                </ul>
+                            </div>
+                            <!-- // FLICKR STREAM --> 
+
+                            <!-- TAGS WIDGET -->
+                            <div class="widget widget-tags">
+                                <h3 class="widget-title"><span>Tags cloud</span></h3>
+                                <ul class="tag-cloud unstyled clearfix">
+                                    <li><a href="#">Creative</a></li>
+                                    <li><a href="#">Responsive</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">HTML</a></li>
+                                    <li><a href="#">CSS</a></li>
+                                    <li><a href="#">Retina</a></li>
+                                    <li><a href="#">Clean</a></li>
+                                </ul>
+                            </div>
+                            <!-- // TAGS WIDGET --> 
+
+                            <!--  WIDGET -->
+
+                            <!-- //  WIDGET --> 
+
+                        </aside>
+                    </div>
+                    <!-- // SIDEBAR --> 
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <div class="footer-block">
+            <div class="container">
+                <div class="row">
+                    <div class="foot-top-line"></div>
+                    <div class="foot-bot-line"></div>
+                    <a class="scroll-top" href="#"><i class="fa fa-angle-up"></i> </a> </div>
+            </div>
+            <div class="container fot-container">
+                <div class="row">
+                    <ul class="nav-footer">
+                        <li><a href="#"><span>HOME</span></a></li>
+                        <li><a href="#"><span>ABOUT</span></a></li>
+                        <li class="current"><a href="#"><span>CONTACT</span></a></li>
+                        <li><a href="#"><span>LOGIN</span></a></li>
+                        <li><a href="#"><span>SIGNUP</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row text-center copyright-info">
+                    <p> © ALL RIGHTS RESERVED 2020 - CARNEWS BLOG DESIGN</p>
+                </div>
+            </div>
+        </div>
+        <!-- END --> 
+
+        <!-- ABSOLUTE FOOTER -->
+        <div class="copyright-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 left">
+                        <ul class="unstyled clearfix social-team">
+                            <li><a href="http://fb.com/#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="http://twitter.com/#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="http://plus.google.com/#" target="_blank"><i class="fa fa-google"></i></a></li>
+                            <li><a href="http://youtube.com/#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="http://rss.com/#" target="_blank"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END --> 
+
+        <!-- SCRIPTS --> 
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>  
+        <script src= "js/jquery-migrate-1.2.1.js" ></script> 
+        <script src="js/bootstrap-3.1.1.min.js"></script> 
+        <script src="js/modernizr.custom.js"></script> 
+        <script src="js/classie.js"></script> 
+        <script src="js/pathLoader.js"></script> 
+        <script src="js/waypoints.min.js"></script> 
+        <script src="js/loader.js"></script> 
+        <script src="js/jflickrfeed.min.js"></script> 
+        <script src="plugins/selectbox/jquery.selectbox-0.2.js"></script> 
+        <script src="plugins/backstretch/backstretch-2.0.4.min.js"></script> 
+        <script src="plugins/camera-slider/camera-slider-1.3.4.min.js"></script> 
+        <script src="plugins/camera-slider/easing-1.3.min.js"></script> 
+        <script src="plugins/fancybox/fancybox-1.3.4.pack.js"></script> 
+        <script src="plugins/fancybox/klass-1.0.min.js"></script> 
+        <script src="plugins/fancybox/photoswipe-3.0.5.min.js"></script> 
+        <script src="plugins/hover-animations/transform2d.min.js"></script> 
+        <script src="plugins/hover-animations/hover-animations-1.0.min.js"></script> 
+        <script src="js/smart-menu.js"></script> 
+        <script src="js/cssua.min.js"></script> 
+        <script src="plugins/bxslider/jquery.bxslider.min.js"></script> 
+        <script src="plugins/nouislider/jquery.nouislider.min.js"></script> 
+        <script src="plugins/flexslider/jquery.flexslider.js"></script> 
+        <script src="js/custom.js"></script>
+    </body>
+</html>
+
