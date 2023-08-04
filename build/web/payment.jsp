@@ -13,7 +13,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CodePen - Daily UI #002 Credit Card Checkout</title>
+    <title>Checkout</title>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
     <script src="https://use.typekit.net/hoy3lrg.js"></script>
     <script>try { Typekit.load({ async: true }); } catch (e) { }</script>
@@ -41,18 +41,18 @@
                        
                         
                         <div class="img-col">
-                            <img src="${c.img}" alt="hinh_anh">
+                            <img src="${c.img}" style="margin-top: 12px" alt="hinh_anh">
                         </div>
                         <div class="meta-col">
-                            <h3>${c.carName}</h3>
-                            <p >${c.description}</p>
+                            <h3 style="font-size: 18px">${c.carName}</h3>
+                            <!--<p >${c.description}</p>-->
                             
                         </div>
                     </div>
 
                     <!-- total money -->
-                    <p id="total">Giá</p>
-                    <h4 id="total-price"><span></span> ${c.price}Triệu</h4>
+                    <p id="total">Giá: <h4 id="total-price"><span></span> ${c.price}Triệu</h4></p>
+                    
                 </div>
             </div>
             <div id="right-col">
